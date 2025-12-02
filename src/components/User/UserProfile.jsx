@@ -3,6 +3,7 @@ import {useState} from "react";
 import {useEffectOnce, useLocalStorage} from "react-use";
 import {userDetailProfile, userUpdatePassword, userUpdateProfile} from "../../lib/api/UserApi.jsx";
 import {alertError, alertSuccess} from "../../lib/alert.js";
+import {Link} from "react-router";
 
 export default function UserProfile() {
     const [name, setName] = useState('')
@@ -75,13 +76,12 @@ export default function UserProfile() {
                 <img src={logo} alt="Logo" className="2xl:h-15 h-10 w-auto"/>
             </div>
             <div className="flex items-center space-x-4">
-                <a href="#"
-                   className="px-4 py-2 rounded-lg text-[#FFEBD3] font-medium text-[24px] transition-all duration-300 hover:bg-[#FFEBD3] hover:text-[#226B80]">Home</a>
-                <a href="#"
-                   className="px-4 py-2 rounded-lg text-[#FFEBD3] font-medium text-[24px] transition-all duration-300 hover:bg-[#FFEBD3] hover:text-[#226B80]">Sign
-                    Up</a>
-                <a href="#"
-                   className="px-4 py-2 rounded-lg font-medium text-[24px] transition-all duration-300 bg-[#FFEBD3] text-[#226B80]">Profile</a>
+                <Link to="/dashboard/splitnow"
+                   className="px-4 py-2 rounded-lg text-[#FFEBD3] font-medium text-[24px] transition-all duration-300 hover:bg-[#FFEBD3] hover:text-[#226B80]">Home</Link>
+                <Link to="#"
+                   className="px-4 py-2 rounded-lg text-[#FFEBD3] font-medium text-[24px] transition-all duration-300 hover:bg-[#FFEBD3] hover:text-[#226B80]">New Split</Link>
+                <Link to="#"
+                   className="px-4 py-2 rounded-lg font-medium text-[24px] transition-all duration-300 bg-[#FFEBD3] text-[#226B80]">Profile</Link>
             </div>
         </div>
     </nav>

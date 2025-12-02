@@ -7,6 +7,7 @@ import UserRegister from "./components/User/UserRegister.jsx";
 import UserLogin from "./components/User/UserLogin.jsx";
 import UserProfile from "./components/User/UserProfile.jsx";
 import UserLogout from "./components/User/UserLogout.jsx";
+import SplitNow from "./components/SplitBill/SplitNow.jsx";
 
 
 createRoot(document.getElementById('root')).render(
@@ -21,11 +22,14 @@ createRoot(document.getElementById('root')).render(
 
            <Route path="/dashboard">
                <Route path="user">
+
                    <Route path="profile" element={<UserProfile/>}/>
                    <Route path="logout" element={<UserLogout/>} />
                </Route>
 
-
+               <Route path="splitnow">
+                    <Route index element={<SplitNow/>}/>
+               </Route>
 
            </Route>
        </Routes>

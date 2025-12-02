@@ -33,7 +33,7 @@ export default function UserLogin() {
             setToken(token);
 
             await navigate({
-                pathname : '/dashboard/contacts'
+                pathname : '/dashboard/splitnow'
             })
         }else {
             await alertError(responseBody.errors)
