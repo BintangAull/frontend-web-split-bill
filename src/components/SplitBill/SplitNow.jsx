@@ -19,12 +19,12 @@ export default function SplitNow () {
                 </Link>
 
                 <Link to="#"
-                   className="px-4 py-2 rounded-lg text-[#FFEBD3] font-medium text-[24px] transition-all duration-300 hover:bg-[#FFEBD3] hover:text-[#226B80]">
+                   className="px-4 py-2 rounded-lg text-[#FFEBD3] btn-animate  font-medium text-[24px] transition-all duration-300 hover:bg-[#FFEBD3] hover:text-[#226B80]">
                     New Split
                 </Link>
 
                 <Link to="/dashboard/user/profile"
-                   className="px-4 py-2 rounded-lg btn-animate hover:underline font-medium text-[24px] transition-all duration-300 ">
+                   className="px-4 py-2 rounded-lg btn-animate  font-medium text-[24px] transition-all duration-300 hover:bg-[#FFEBD3] hover:text-[#226B80] ">
                     Profile
                 </Link>
 
