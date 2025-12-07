@@ -85,9 +85,9 @@ export default function UserProfile() {
             <div className="flex items-center space-x-4">
                 <Link to="/dashboard/splitnow"
                    className="px-4 py-2 rounded-lg text-[#FFEBD3] font-medium text-[24px] transition-all duration-300 hover:bg-[#FFEBD3] btn-animate  hover:text-[#226B80]">Home</Link>
-                <Link to="#"
+                <Link to="/dashboard/splitnow/create"
                    className="px-4 py-2 rounded-lg text-[#FFEBD3] font-medium text-[24px] transition-all duration-300 hover:bg-[#FFEBD3] btn-animate  hover:text-[#226B80]">New Split</Link>
-                <Link to="#"
+                <Link to="/dashboard/user/profile"
                    className="px-4 py-2 rounded-lg font-medium text-[24px] transition-all duration-300 bg-[#FFEBD3] btn-animate  text-[#226B80]">Profile</Link>
             </div>
         </div>
