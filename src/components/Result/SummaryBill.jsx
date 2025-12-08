@@ -122,7 +122,7 @@ export default function SummaryBill() {
 
 
                             <div className="text-[#FFEBD3] font-semibold text-lg">
-                                {participant ? "Rp " + participant.subtotal: "Loading..."}
+                                {participant ? "Rp " + participant.total: "Loading..."}
                             </div>
                     </div>
                         ))

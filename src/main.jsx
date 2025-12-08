@@ -1,7 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import {BrowserRouter, Route, Routes} from "react-router";
-
 import RedirectLogin from "./components/RedirectLogin.jsx";
 import UserRegister from "./components/User/UserRegister.jsx";
 import UserLogin from "./components/User/UserLogin.jsx";
@@ -9,7 +8,6 @@ import UserProfile from "./components/User/UserProfile.jsx";
 import UserLogout from "./components/User/UserLogout.jsx";
 import SplitNow from "./components/SplitBill/SplitNow.jsx";
 import CreateEvent from "./components/SplitBill/CreateEvent.jsx";
-
 import ListParticipant from "./components/SplitBill/ListParticipant.jsx";
 import AddParticipant from "./components/SplitBill/AddParticipant.jsx";
 import AddItem from "./components/SplitBill/AddItem.jsx";
